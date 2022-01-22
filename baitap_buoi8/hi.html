@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            background-color: brown;
+            height: 100px;
+            width: 100%;
+        }
+        .menu-ul {
+            display: flex;
+            list-style: none;
+        }
+        .menu-ul>li>a {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            line-height: 100px;
+            padding: 34px 60px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .menu-ul>li>a:hover {
+            background-color: burlywood;
+        }
+        
+        
+        .chu-cai>a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 50px;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 10px;
+            display: block;
+            color: white;
+            background-color: rgb(165, 71, 42);
+        }
+        .chu-cai{
+            display: none;
+        }
+        .chu:hover > .chu-cai{
+            display: block;
+        }
+        .chu-cai>a:hover{
+            background-color: burlywood;
+        }
+
+        .menu-ul>li:hover>
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu-ul">
+            <li><a href="#">home</a></li>
+            <li class="chu">
+                <a href="#">chu</a>
+                <div class="chu-cai">
+                    <a href="#">a</a>
+                    <ul>
+                        <li>
+                            <a href="#">ak</a>
+                        </li>
+                    </ul>
+                    
+                    <a href="#">b</a>
+
+
+                    
+                    <a href="#">c</a>
+                        <div class="chu-c">
+                            <a href="#">chó</a>
+                            <a href="#">cá</a>
+                        </div>
+                         
+
+
+                </div>
+            </li>
+
+            <li><a href="#">so</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

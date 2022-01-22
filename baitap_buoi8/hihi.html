@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .nav {
+            display: flex;
+        }
+        
+        .nav>li {
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .nav>li:hover>.sub-nav {
+            display: block;
+        }
+        
+        .sub-nav {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+        }
+        
+        .sub-nav:hover .sub-nav-l2 {
+            display: block;
+        }
+        
+        .sub-nav-l2 {
+            right: 0;
+            top: 0;
+            left: 100%;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li>Trang chu
+                <ul class="sub-nav">
+                    <li>Gioi thieu chung
+                        <ul class="sub-nav sub-nav-l2">
+                            <li>So do bo may</li>
+                            <li>Phong ban</li>
+                            <li>Cac khoa</li>
+                        </ul>
+                    </li>
+                    <li>Su mang</li>
+                    <li>Co so vat chat</li>
+                </ul>
+            </li>
+            <li>Tuyen sinh</li>
+            <li>Lien he</li>
+            <li>Gioi thieu</li>
+            <li>Co cau to chuc</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  background-color: brown;
+  height: 100px;
+}
+
+.menu-ul {
+  display: flex;
+}
+
+.menu-ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 100px;
+  padding: 34px 60px;
+  text-transform: capitalize;
+}
+.menu-ul > li > a:hover {
+  background-color: burlywood;
+}
+
+.agents > li > a,
+.duelist > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 10px;
+  display: block;
+  color: white;
+  background-color: rgb(165, 71, 42);
+}
+.agents > li > a:hover {
+  background-color: rgba(222, 184, 135, 0.925);
+}
+
+.duelist > li > a {
+  background-color: rgb(165, 71, 42,0.5);
+}
+
+.nav-bar > li {
+  position: relative;
+}
+
+.nav-bar > li:hover > .sub-nav,
+  .sub-nav > li:hover > .sub-nav{
+  display: block;
+}
+
+.sub-nav {
+  position: absolute;
+  display: none;
+}
+
+.sub-nav .sub-nav {
+  left: 100%;
+  top: 0;
+}
